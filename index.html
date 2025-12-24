@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barkot Ullah | Web, IT & CCTV Solutions</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Professional Web Design, IT Support & CCTV Solutions for Business and Factory.">
+  <meta name="keywords" content="Web Designer, IT Support, CCTV Service, Factory IT, Bangladesh">
+
+  <style>
+    :root{
+      --primary:#00eaff;
+      --dark:#0a0f1f;
+      --light:#ffffff;
+      --card:#111833;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui, Arial, sans-serif;
+      background:var(--dark);
+      color:var(--light);
+      line-height:1.6;
+    }
+
+    a{color:var(--primary); text-decoration:none}
+
+    header{
+      background:linear-gradient(90deg,#0a0f1f,#111c44);
+      padding:1rem 0;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:0 1rem;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:1rem;
+      padding:0;
+      margin:0;
+    }
+
+    nav h1{
+      font-size:1.2rem;
+      color:var(--primary);
+    }
+
+    /* HERO */
+    .hero{
+      padding:4rem 0;
+      background:radial-gradient(circle at top, #112266, #0a0f1f);
+    }
+
+    .hero h2{
+      font-size:2.4rem;
+      margin-bottom:1rem;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:.7rem 1.3rem;
+      background:var(--primary);
+      color:#000;
+      border-radius:6px;
+      margin-right:.5rem;
+      font-weight:600;
+    }
+
+    /* SECTIONS */
+    section{padding:3rem 0}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1.5rem;
+    }
+
+    .card{
+      background:var(--card);
+      padding:1.5rem;
+      border-radius:10px;
+    }
+
+    .card h3{color:var(--primary)}
+
+    /* PORTFOLIO */
+    .portfolio img{
+      width:100%;
+      border-radius:8px;
+    }
+
+    /* CONTACT */
+    form input, form textarea{
+      width:100%;
+      padding:.6rem;
+      margin:.4rem 0;
+      border-radius:5px;
+      border:none;
+    }
+
+    form button{
+      width:100%;
+      padding:.7rem;
+      background:var(--primary);
+      border:none;
+      border-radius:5px;
+      font-weight:600;
+    }
+
+    /* WHATSAPP */
+    .whatsapp{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      background:#25D366;
+      color:#fff;
+      padding:.8rem 1rem;
+      border-radius:50px;
+      font-weight:600;
+    }
+
+    footer{
+      text-align:center;
+      padding:1rem;
+      background:#060a14;
+      font-size:.9rem;
+    }
+
+    @media(max-width:600px){
+      .hero h2{font-size:1.8rem}
+      nav ul{flex-wrap:wrap}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <h1>Barkot Ullah</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <h2>Professional Web, IT & CCTV Solutions</h2>
+    <p>Helping businesses & factories grow with smart technology solutions.</p>
+    <a class="btn" href="#contact">Free Consultation</a>
+    <a class="btn" href="https://wa.me/8801301296476" target="_blank">WhatsApp Now</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2>My Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Business Website</h3>
+        <p>Modern, responsive & SEO-friendly websites.</p>
+      </div>
+      <div class="card">
+        <h3>IT & Network Support</h3>
+        <p>Office & factory IT infrastructure solutions.</p>
+      </div>
+      <div class="card">
+        <h3>CCTV Solutions</h3>
+        <p>Complete security coverage & maintenance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <div class="grid portfolio">
+      <div class="card">
+        <img src="Barkot Business Card final design (1).png" alt="Project">
+        <p>Business Website Project</p>
+      </div>
+      <div class="card">
+        <img src="Cyber IT Creation ID.png" alt="Project">
+        <p>Corporate IT Solution</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="grid">
+      <div class="card">
+        <p><strong>Email:</strong> bitunittex51@gmail.com</p>
+        <p><strong>WhatsApp:</strong> 01301296476</p>
+        <p><strong>Location:</strong> Chittagong, Bangladesh</p>
+      </div>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/8801301296476" target="_blank">WhatsApp</a>
+
+<footer>
+  © 2025 | Barkot Ullah | Web • IT • CCTV Solutions
+</footer>
+
+</body>
+</html>
